@@ -62,7 +62,7 @@ class CourseController extends Controller
             return redirect('/courses');
       }
 
-      public function destory($id){
+      public function destroy($id){
         $course=course::find($id);
      $course->delete();
      return redirect('/courses');
